@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <tltle></tltle>
+    <style>
+       #shiki1{
+        width:1100px;
+        height:110px;
+        display: flex;
+        justify-content: space-between;
+        margin:0 auto;
+      }
+      #shiki2,#shiki5,#shiki6,#shiki7{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height:110px;
+      }
+      #saki0{
+          border:4px solid red;
+          width:200px;
+          height:20px;
+          outline:none;
+      }
+      #saki1{
+        width:60px;
+        height:30px;
+      }
+      #shiki9{
+           width:80px;
+           height:30px;
+           background-color: aquamarine;
+           border-style: none;
+           color: white;
+           cursor:pointer;
+      }
+      #shiki3,#shiki4{
+        line-height:110px;
+      }
+      #shiki3 a{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+        display: block;
+      }
+      #shiki3  a:hover{
+        color:red;
+        border-top:5px solid red;
+      }
+      #shiki3 a:active {
+        color:blue;
+      }
+      #shiki4 a{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+        display: block;
+      }
+      #shiki4  a:hover{
+        color:red;
+        border-top:5px solid red;
+      }
+      #shiki4 a:active {
+        color:blue;
+      }
+       .back{
+        background-color: rgb(234, 234, 234);
+        height: 2100px;
+      }
+      body{
+        min-width: 1100px;
+      }
+      #ryougi0{
+        display:flex;
+      height:385px;
+      }
+      #ryougi1{
+          margin:auto;
+          position:relative;
+          
+      }
+      #ryougi2{
+        width:80px;
+        display: flex;
+        position:absolute;
+        flex-direction: row;
+        justify-content: space-between;
+        bottom:20px;
+        right:35px;
+      }
+      .doge1,.doge2{
+        width:15px;
+        height:15px;
+        border:2px solid white;
+        border-radius: 50%;
+        text-decoration: none;
+      }
+       .doge2{
+         background-color: black; }
+      .doge1:hover{
+        background-color: black;
+      }
+     #rin0{
+       width:1100px;
+       height:500px;
+       background-color: white;
+       margin:auto;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+      }
+      #rin1{
+       width:1100px;
+       height:500px;
+       background-color: white;
+       margin:auto;
+      }
+      #rin2{
+      width:1100px;
+       height:500px;
+       background-color: white;
+       margin:auto;
+      }
+
+       #rin1,#rin2{
+        margin-top: 7px;
+       }
+       #rin2{
+        margin-bottom: 400px;
+       }
+       #gong{
+        width:240px;
+        height:490px;
+       }
+       #gong0{
+        width:100px;
+        height:100px;
+        border:3px solid rgb(140, 249, 140);
+        border-radius: 50%;
+        margin:auto;
+        margin-top:60px;
+        margin-bottom: 60px;
+ 
+      }
+        #gong-text{
+           font-size: 50px;
+           line-height: 100px;
+           text-align: center;
+           color:rgb(140, 249, 140);
+           cursor: default;
+        }
+        #gong1{
+        width:10px;
+        height:10px;
+        border:2px solid rgb(140, 249, 140);
+        border-radius: 50%;
+        margin:auto;
+        margin-top: 50px;
+        }
+        #gong2{
+          border-right: 1px dashed gray;
+        }
+        #gong5{
+        width:10px;
+        height:4.8px;
+        border-bottom:0.5px solid rgb(140, 249, 140);
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        }
+        #gong7{
+        width:4.8px;
+        height:4.8px;
+        border-right:0.5px solid rgb(140, 249, 140);
+        }
+        #gong8{
+        width:4.8px;
+        height:4.8px;
+        border-left:0.5px solid rgb(140, 249, 140);
+        }
+        #gong6{
+        width:10px;
+        height:4.8px;
+        border-top:0.5px solid rgb(140, 249, 140);
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        }
+        #gong9{
+        width:4.8px;
+        height:4.8px;
+        border-right:0.5px solid rgb(140, 249, 140);
+        }
+        #gong10{
+        width:4.8px;
+        height:4.8px;
+        border-left:0.5px solid rgb(140, 249, 140);
+        }
+        #seigari6{
+          margin-left:25px;
+        }
+        #seigari{
+          font-size: small;
+          list-style-type: none;
+          margin-bottom: 10px;
+          margin-left:20px;
+        }
+        li,#seigari{
+          cursor:pointer;
+        }
+        #seigari6:hover{
+          color:red;
+        }
+        #third0{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          padding:25px;
+        }
+        .third1{
+          font-size: 30px;
+          font-weight:600;
+          cursor: default;
+        }
+        .third2{
+          font-weight:200;
+          color: rgb(69, 215, 166);
+          cursor: default;
+        }
+        #third3{
+          width:1000px;
+          height:320px;
+          margin :auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+         }
+         #clock0{
+          width:175px;
+          height:320px;
+          border-right: 2px solid rgb(140, 249, 140);
+         }
+         #clock1{
+          height:160px;
+          border-bottom: 1px solid rgb(140, 249, 140);
+          border-top: 2px solid rgb(140, 249, 140);
+          border-left: 2px solid rgb(140, 249, 140);
+         }
+         #clock2{
+          height:175px;
+          border-top: 1px solid rgb(140, 249, 140);
+         }
+         #up0{
+          width:175px;
+          height:320px;
+          border-right: 2px solid rgb(140, 249, 140);
+         }
+         #up1{
+          height:160px;
+          border-top: 2px solid rgb(255, 255, 255);
+          border-bottom: 1px solid rgb(140, 249, 140);
+         }
+         #up2{
+          height:154px;
+          border-top: 1px solid rgb(140, 249, 140);
+          border-bottom: 2px solid rgb(140, 249, 140);
+         }
+         #clock3{
+          height:160px;
+          border-bottom: 1px solid rgb(140, 249, 140);
+          border-top: 2px solid rgb(140, 249, 140);
+         }
+         #clock4{
+          height:160px;
+          border-bottom: 1px solid rgb(140, 249, 140);
+          border-top: 2px solid rgb(140, 249, 140);
+          border-right:2px solid rgb(140, 249, 140); ;
+         }
+         #clock5{
+          height:160px;
+          border-top: 1px solid rgb(140, 249, 140);
+         }
+         #clock6{
+          width:175px;
+          height:320px;
+         }
+        #clock0>*{
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        #up0>*{
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        #clock6>*{
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        #shuzi{
+        color:red;
+        font-size: 65px;
+        text-decoration: underline;
+        cursor: default;
+        }
+        #clock1:hover,#clock3:hover,#clock4:hover{
+            border:1px solid rgb(140, 249, 140);
+            width:176px;
+            height:161px;
+            background-color: rgb(140, 249, 140);
+            color:white;
+            cursor:pointer;
+        }
+        #up2:hover{
+            border:1px solid rgb(140, 249, 140);
+            width:176px;
+            height:155px;
+            background-color: rgb(140, 249, 140);
+            color:white;
+            cursor:pointer;
+        }
+       #doushin0{
+        width:750px;
+        height:300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin:auto;
+       }
+       #koi1{
+        width:220px;
+        height:320px;
+       }
+       #doushin1{
+        margin:auto;
+        width:150px;
+        height:90px;
+        border:1px solid rgb(254, 87, 87);
+        background-color: rgb(254, 87, 87);
+        color:rgb(229, 229, 229);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+       #tupian1{
+        width:193px;
+        height:61px;
+          padding-bottom: 0px;
+          margin:auto;
+          visibility: hidden;
+        }
+        #koi2:hover  #tupian1{
+          visibility: visible;
+        }
+        #koi2:hover  #doushin1{
+         width:150px;
+        height:90px;
+        border:1px solid rgb(255, 0, 0);
+        background-color: rgb(255, 0, 0);
+        color:rgb(255, 255, 255);
+        cursor: pointer;
+        }
+       #senrenbanka{
+        height:150px;
+        background-color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       #mako0{
+        width:380px;
+        height: 100px;
+       }
+       #mako1{
+        margin:auto;
+        width:324px;
+        height: 50px;
+        border-bottom: 3px solid rgb(194, 192, 192);
+       }
+       #mako2{
+        margin:auto;
+        margin-top: 5px;
+        width:380px;
+        height: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       }
+       #youshino0{
+        width:180px;
+        height: 18px;
+        border-right:2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       #youshino1{
+        width:180px;
+        height: 18px;
+        border-left:2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+
+
+
+      
+
+
+
+
+    </style>
+    </head>
+    <body>
+      <header>
+        <div id="shiki0">
+          <div id="shiki1">
+            <div id="shiki2">
+              <img src="$A(3U)U)`J3VC7H`%8$4(@X.png">
+              <h1 style="color:aquamarine;cursor:default;">学而</h1>
+            </div>
+            <div id="shiki3">
+              <a  href="">首页</a>
+            </div>
+            <div id="shiki4">
+              <a  href="">分类查看</a>
+            </div>
+            <div id="shiki5">
+              <input type="text" id="saki0"/><input type="image"  id="saki1" src="2_M$M$ACL%0II]STWDD6I_E.png" alt="搜索" height="20">
+            </div>
+            <div id="shiki6">
+                <a href=""><img src="Q03KSK48M@ZCYKF(4DDEZLY.png"></a>
+              </div>
+            <div id="shiki7">
+              <button id="shiki9">退&nbsp;&nbsp;出</button>
+            </div>
+          </div>
+        </div>
+      </body>
+    </header>
+
+
+
+    <div class="back">
+          <div id="ryougi0">
+            <div id="ryougi1">
+               <img src="E~)3S]NU_87}Z28ZRDW~UKH.png"width="1103">
+              <div id="ryougi2">
+                <div><a class="doge2"  href="" > &nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+                <div><a class="doge1"  href="" > &nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+                <div><a class="doge1"  href="" > &nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+            </div>
+            </div>
+         </div>
+
+
+
+
+        <div id="rin0">
+
+              <div class="green0">
+                 <div id="gong"> 
+                   <div id="gong0">
+                    <div id="gong-text">公</div>
+                   </div>
+                   <div id="gong2">
+                    <ul>
+                      <div id="seigari6">
+                        <li>界面和设计页面</li>
+                      <li id="seigari">房子</li>
+                      </div>
+                      
+                      <div id="seigari6">
+                      <li>java程序编程</li>
+                      <li id="seigari">赵三金</li>
+                      </div>
+                      
+                      <div id="seigari6">
+                        <li>设计师的自我修养</li>
+                      <li id="seigari">分享课程</li>
+                      </div>
+                      
+                    </ul>
+                   </div>
+                   <div id="gong1">
+                    <div id="gong4">
+                      <div id="gong5">
+                        <div id="gong7"></div>
+                        <div id="gong8"></div>
+                      </div>
+                      <div id="gong6">
+                        <div id="gong9"></div>
+                        <div id="gong10"></div>
+                      </div>
+                    </div>
+                   </div>
+                 </div>
+              </div>
+
+              <div class="green0">
+                <div id="gong"> 
+                  <div id="gong0">
+                   <div id="gong-text">通</div>
+                  </div>
+                  <div id="gong2">
+                   <ul>
+                    <div id="seigari6">
+                      <li>计算机基础</li>
+                      <li id="seigari">胡薇</li>
+                    </div>
+                    <div id="seigari6">
+                      <li>植物观赏学基础</li>
+                    <li id="seigari">韩一尾</li>
+                    </div>
+                    
+                    <div id="seigari6">
+                      <li>生活常识101</li>
+                    <li id="seigari">分享</li>
+                    </div>
+                    
+                   </ul>
+                  </div>
+                  <div id="gong1">
+                    <div id="gong4">
+                      <div id="gong5">
+                        <div id="gong7"></div>
+                        <div id="gong8"></div>
+                      </div>
+                      <div id="gong6">
+                        <div id="gong9"></div>
+                        <div id="gong10"></div>
+                      </div>
+                    </div>
+                   </div>
+                </div>
+             </div>
+
+             <div class="green0">
+              <div id="gong"> 
+                <div id="gong0">
+                 <div id="gong-text">素</div>
+                </div>
+                <div id="gong2">
+                 <ul>
+                  <div id="seigari6">
+                    <li>新生引导课堂</li>
+                      <li id="seigari">开心季</li>
+                  </div>
+                  
+                      <div id="seigari6">
+                        <li>党课精神研讨课</li>
+                      <li id="seigari">分享课程</li>
+                      </div>
+                      
+                      <div id="seigari6">
+                        <li>专业方向</li>
+                      <li id="seigari">毕业生</li>
+                      </div>
+                      
+                 </ul>
+                </div>
+                <div id="gong1">
+                  <div id="gong4">
+                    <div id="gong5">
+                      <div id="gong7"></div>
+                      <div id="gong8"></div>
+                    </div>
+                    <div id="gong6">
+                      <div id="gong9"></div>
+                      <div id="gong10"></div>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+           </div>
+
+           <div class="green0">
+            <div id="gong"> 
+              <div id="gong0">
+               <div id="gong-text">专</div>
+              </div>
+              <div id="gong3">
+               <ul>
+                <div id="seigari6">
+                  <li>影视广告摄影基础</li>
+                  <li id="seigari">分享课程</li>
+                </div>
+                
+                 <div id="seigari6">
+                  <li>程序员的养成</li>
+                 <li id="seigari">赵多金</li>
+                 </div>
+                 
+                 <div id="seigari6">
+                  <li>如何让设计师改稿</li>
+                 <li id="seigari">甲方</li>
+                 </div>
+                 
+               </ul>
+              </div>
+              <div id="gong1">
+                <div id="gong4">
+                  <div id="gong5">
+                    <div id="gong7"></div>
+                    <div id="gong8"></div>
+                  </div>
+                  <div id="gong6">
+                    <div id="gong9"></div>
+                    <div id="gong10"></div>
+                  </div>
+                </div>
+               </div>
+            </div>
+         </div>
+        </div>
+                
+        <div id="rin1">
+            <div id="third0">
+              <h class="third1">最热课程动态</h>
+              <h class="third2">精心为您推荐最佳口碑课程排行NO.1~NO.5</h>
+            </div>
+          <div id="third3">
+            <div id="clock0">
+              <div id="clock1">
+                <h>常勇</h>
+                <h>《化学生活》</h>
+              </div>
+              <div id="clock2">
+                <h id="shuzi">01</h>
+              </div>
+            </div>
+            <div id="up0">
+               <div id="up1">
+                <h id="shuzi">02</h>
+               </div>
+               <div id="up2">
+                <h>李达</h>
+                <h>《大学生语文》</h>
+               </div>
+            </div>
+            <div id="clock0">
+              <div id="clock3">
+                <h>张勇</h>
+                <h>《java语言程序设计》</h>
+              </div>
+              <div id="clock2">
+                <h id="shuzi">03</h>
+              </div>
+            </div>
+            <div id="up0">
+              <div id="up1">
+                <h id="shuzi">04</h>
+              </div>
+              <div id="up2">
+                <h>苏燕</h>
+                <h>《视觉语言》</h>
+              </div>
+           </div>
+           <div id="clock6">
+            <div id="clock4">
+              <h>张国</h>
+              <h>《计算机组装》</h>
+            </div>
+            <div id="clock5">
+              <h id="shuzi">05</h>
+            </div>
+           </div>
+          </div>
+          </div>
+        <div id="rin2">
+            <div id="third0">
+              <h class="third1">猜您喜欢课程</h>
+              <h class="third2">根据您的浏览记录,推荐相似课程列表</h>
+            </div>
+            <div id="doushin0">
+                 <div id="koi1">
+                  <div id="koi2">
+                 <div id="tupian1">
+             <img src="5)}326BW654GA)0Z8@5`_I8.png"height="61"width="193">
+                 </div>
+                  <div id="doushin1">
+                    <h>《毛泽东思想》</h>
+                    <h> 赵三金</h>
+                   </div>
+                  </div>
+                 </div>  
+              
+                
+                 <div id="koi1">
+                  <div id="koi2">
+                    <div id="tupian1">
+                      <img src="5)}326BW654GA)0Z8@5`_I8.png"height="61"width="193">
+                          </div>
+                           <div id="doushin1">
+                            <h>《邓小平理论》</h>
+                            <h> 胡一薇</h>
+                           </div>
+                  </div>
+            </div>
+            
+            <div id="koi1">
+              <div id="koi2">
+                <div id="tupian1">
+                  <img src="5)}326BW654GA)0Z8@5`_I8.png"height="61"width="193">
+              </div>
+                   <div id="doushin1">
+                    <h>《科学发展观》</h>
+                    <h> 梁非凡</h>
+                   </div>
+              </div>
+              
+            </div>
+
+             <div id="koi1">
+              <div id="koi2">
+                <div id="tupian1">
+                  <img src="5)}326BW654GA)0Z8@5`_I8.png"height="61"width="193">
+                      </div>
+                         <div id="doushin1">
+                          <h>《三个代表》</h>
+                          <h> 韩一尾</h>
+                         </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+      <footer id="senrenbanka">
+        <div id="mako0">
+          <div id="mako1">
+         <img src="R3}U){~E7N9FIP1]}70Z96C.png"width="324"height="50">
+          </div>
+          <div id="mako2">
+           <div id="youshino0">
+              <h style="color:rgb(179, 179, 179)">M&nbsp;U&nbsp;X&nbsp;I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;T&nbsp;D&nbsp;I&nbsp;O&nbsp;&nbsp;</h>
+           </div>
+           <div id="youshino1">
+            <h style="color:rgb(179, 179, 179)">华中师范大学木犀团队</h>
+           </div>
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </footer>
+    </body>
+</html>
